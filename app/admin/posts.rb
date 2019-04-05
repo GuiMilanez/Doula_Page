@@ -19,6 +19,4 @@ ActiveAdmin.register Post do
     end
     f.actions
   end
-
-
 end
