@@ -3,11 +3,16 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
  */
+ element {
+  --main-text-color: rgb(170, 44, 44);
+}
+
 
 body {
   font-size: 20px;
-  color: #212529;
+  color: var(--main-text-color) !important;
   font-family: 'Lora', 'Times New Roman', serif;
+  list-style: none;
 }
 
 p {
@@ -16,7 +21,10 @@ p {
 }
 
 p a {
-  text-decoration: underline;
+  text-decoration: none !important;
+}
+a {
+  text-decoration: none !important;
 }
 
 h1,
@@ -30,7 +38,6 @@ h6 {
 }
 
 a {
-  color: #212529;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -86,7 +93,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: #343a40;
+  color: var(--main-text-color) !important;
 }
 
 #mainNav .navbar-toggler {
@@ -94,7 +101,7 @@ img::-moz-selection {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #343a40;
+  color: var(--main-text-color) !important;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -111,17 +118,17 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
-    color: #fff;
+    color: var(--main-text-color) !important;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--main-text-color) !important;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
-    color: #fff;
+    color: var(--main-text-color) !important;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--main-text-color) !important;
   }
 }
 
@@ -146,16 +153,16 @@ img::-moz-selection {
     background-color: rgba(255, 255, 255, 0.9);
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: var(--main-text-color) !important;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
+    color: var(--main-text-color) !important;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
+    color: var(--main-text-color) !important;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
+    color: var(--main-text-color) !important;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -171,6 +178,7 @@ header.masthead {
   background-attachment: scroll;
   position: relative;
   background-size: cover;
+  background-image: '/images/home-bg.jpg';
 }
 
 header.masthead .overlay {
