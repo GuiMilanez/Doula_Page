@@ -1,5 +1,4 @@
-class 
-  ReferencesController < ApplicationController
+class ReferencesController < ApplicationController
   def index
 	end
 

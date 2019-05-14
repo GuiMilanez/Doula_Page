@@ -3,16 +3,17 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
  */
- element {
-  --main-text-color: rgb(170, 44, 44);
-}
+
 
 
 body {
   font-size: 20px;
-  color: var(--main-text-color) !important;
+  color: #e9ecef;
   font-family: 'Lora', 'Times New Roman', serif;
-  list-style: none;
+
+}
+ul {
+  list-style: none !important;
 }
 
 p {
@@ -42,13 +43,21 @@ a {
   transition: all 0.2s;
 }
 
-a:focus, a:hover {
-  color: #0085A1;
+a:focus, a:hover, a:visited {
+  color: rgb(240, 244, 245);
+}
+
+.btn {
+  background-color: rgb(192, 43, 6) !important;
+  border-top-color: #e9ecef !important;
+  border-bottom-color: #e9ecef !important;
+  border-left-color: #e9ecef !important;
+  border-right-color: #e9ecef !important;
 }
 
 blockquote {
   font-style: italic;
-  color: #868e96;
+  color: #e9ecef;
 }
 
 .section-heading {
@@ -69,31 +78,31 @@ blockquote {
 }
 
 ::selection {
-  color: #fff;
+  color: #e9ecef;
   background: #0085A1;
   text-shadow: none;
 }
 
 img::selection {
-  color: #fff;
+  color: #e9ecef;
   background: transparent;
 }
 
 img::-moz-selection {
-  color: #fff;
+  color: #e9ecef;
   background: transparent;
 }
 
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
-  background-color: white;
+  background-color: #e9ecef;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: var(--main-text-color) !important;
+  color: #e9ecef;
 }
 
 #mainNav .navbar-toggler {
@@ -101,7 +110,7 @@ img::-moz-selection {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: var(--main-text-color) !important;
+  color: #e9ecef;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -118,17 +127,17 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
-    color: var(--main-text-color) !important;
+    color: #e9ecef;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: var(--main-text-color) !important;
+    color: #e9ecef;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
-    color: var(--main-text-color) !important;
+    color: #e9ecef;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: var(--main-text-color) !important;
+    color: #e9ecef;
   }
 }
 
@@ -149,20 +158,20 @@ img::-moz-selection {
     transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
     transition: transform 0.2s, -webkit-transform 0.2s;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #e9ecef;
     background-color: rgba(255, 255, 255, 0.9);
   }
   #mainNav.is-fixed .navbar-brand {
-    color: var(--main-text-color) !important;
+    color: #e9ecef;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: var(--main-text-color) !important;
+    color: #e9ecef;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: var(--main-text-color) !important;
+    color: #e9ecef;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: var(--main-text-color) !important;
+    color: #e9ecef !important;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -188,14 +197,14 @@ header.masthead .overlay {
   height: 100%;
   width: 100%;
   background-color: #212529;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
-  color: white;
+  color: #e9ecef;
 }
 
 @media only screen and (min-width: 768px) {
@@ -259,7 +268,7 @@ header.masthead .post-heading .meta {
 }
 
 header.masthead .post-heading .meta a {
-  color: #fff;
+  color: #e9ecef;
 }
 
 @media only screen and (min-width: 768px) {
@@ -308,6 +317,10 @@ header.masthead .post-heading .meta a {
   color: #0085A1;
 }
 
+.post-title img {
+  height: 150px;
+}
+
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
@@ -319,7 +332,7 @@ header.masthead .post-heading .meta a {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #e9ecef;
 }
 
 .floating-label-form-group input,
@@ -372,7 +385,7 @@ header.masthead .post-heading .meta a {
 }
 
 form .form-group:first-child .floating-label-form-group {
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #e9ecef;
 }
 
 footer {
@@ -406,7 +419,7 @@ footer .copyright {
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  color: #fff;
+  color: #e9ecef;
   background-color: #00657b !important;
   border-color: #00657b !important;
 }
@@ -414,4 +427,29 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+/* SERVICES */
+
+.doula-services li {
+  line-height: 2em;
+}
+
+.pagination a {
+  border: none;
+  padding-left: 15px;
+  align-items: center;
+  font-family: Arial;
+}
+.pagination a:visited {
+  color: #333;
+}
+.current {
+  padding: 0 10px;
+  font-family: Arial;
+  align-items: center;
+}
+
+.post-wrapper {
+  display: flex;
 }

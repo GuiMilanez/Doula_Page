@@ -1,5 +1,4 @@
-class 
-  ServicesController < ApplicationController
+class ServicesController < ApplicationController
   def index
 	end
 

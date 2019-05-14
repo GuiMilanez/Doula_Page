@@ -16,6 +16,7 @@ gem 'activeadmin'
 gem 'active_skin'
 gem 'paperclip', '~> 6.1'
 gem 'mimemagic', '~> 0.3.3'
+gem 'will_paginate', '~> 3.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/services', to: 'services#index'
   get '/references', to: 'references#index'
   get '/contact', to: 'contact#index'
+  get '/about', to: 'about#index'
 
   root 'posts#index'
 end
